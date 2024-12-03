@@ -1,18 +1,19 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
-## CS110 B1 Final Project  << Semester, Year >>
+# Christmas Platformer
+## CS110 B1 Final Project  1st Semester, 2024
 
 ## Team Members
-
-<< List team member names >>
+Jyotirmoy Dasroy
+Sanju Chacko
 
 ***
 
 ## Project Description
-
-<< Give an overview of your project >>
+This 2D platformer is a Christmas-themed game with a Grinch-inspired twist. 
+The game includes features like item collection and holiday-themed visual and audio design. 
+It aims to combine seasonal aesthetics with engaging gameplay mechanics for a fun and festive experience.
 
 ***    
 
@@ -30,11 +31,11 @@
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. start menu
+2. moveable character
+3. obstacle collisions
+4. scrolling background
+5. game over screen
 
 ### Classes
 

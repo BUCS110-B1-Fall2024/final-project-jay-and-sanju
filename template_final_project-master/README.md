@@ -97,6 +97,7 @@ The Present image is resized to 30x30 pixels.
 | 1    | Start the game.                    | The game begins, and Grinches are visible.    |
 | 2    | Observe Grinch movement.           | Grinches move randomly in the game world.     |
 | 3    | Verify movement randomness.        | Grinch movement appears erratic and unpredictable.|
+
 | Step | Procedure                          | Expected Results                              |
 |------|------------------------------------|-----------------------------------------------|
 | 1    | Start the game.                    | The game begins without any issues.           |

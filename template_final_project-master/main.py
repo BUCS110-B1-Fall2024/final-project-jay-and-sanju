@@ -1,8 +1,7 @@
 import pygame
 import sys
 import os
-os.chdir(os.path.dirname(__file__))
-sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+
 from controller import Controller
 
 def main():

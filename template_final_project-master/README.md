@@ -70,28 +70,38 @@ The Present image is resized to 30x30 pixels.
 ## ATP
 
 
-    | Step                 |Procedure             |Expected Results                   |
-    |----------------------|:--------------------:|----------------------------------:|
-    |  1                   |Start the game        |GUI window appears with count = 0  |
-    |  2                   |Press the UP arrow key| display changes to count = 1      |
+| Step | Procedure                          | Expected Results                              |
+|------|------------------------------------|-----------------------------------------------|
+| 1    | Start the game.                    | The game begins, and Santa is visible.        |
+| 2    | Press the UP arrow key.            | Santa moves up.                               |
+| 3    | Press the DOWN arrow key.          | Santa moves down.                             |
+| 4    | Press the LEFT arrow key.          | Santa moves left.                             |
+| 5    | Press the RIGHT arrow key.         | Santa moves right.                            |
 
-    | Step                 |Procedure             |Expected Results                   |
-    |----------------------|:--------------------:|----------------------------------:|
-    |  1                   | Run Counter Program  |GUI window appears with count = 0  |
-    |  2                   | click count button   | display changes to count = 1      |
+| Step | Procedure                          | Expected Results                              |
+|------|------------------------------------|-----------------------------------------------|
+| 1    | Start the game.                    | The game begins, and presents are visible.    |
+| 2    | Move Santa to the position of a present. | Santa collides with the present.        |
+| 3    | Verify the present disappears.     | The present is removed from the game world.   |
+| 4    | Verify the game registers the collection. | The collection is recorded appropriately.|
 
-    | Step                 |Procedure             |Expected Results                   |
-    |----------------------|:--------------------:|----------------------------------:|
-    |  1                   | Run Counter Program  |GUI window appears with count = 0  |
-    |  2                   | click count button   | display changes to count = 1      |
 
-    | Step                 |Procedure             |Expected Results                   |
-    |----------------------|:--------------------:|----------------------------------:|
-    |  1                   | Run Counter Program  |GUI window appears with count = 0  |
-    |  2                   | click count button   | display changes to count = 1      |
+| Step | Procedure                          | Expected Results                              |
+|------|------------------------------------|-----------------------------------------------|
+| 1    | Start the game.                    | The game begins, and Grinches are visible.    |
+| 2    | Move Santa into the path of a Grinch. | Santa collides with the Grinch.            |
+| 3    | Verify the game behavior.          | A "Game Over" message or similar response appears.|
 
-    | Step                 |Procedure             |Expected Results                   |
-    |----------------------|:--------------------:|----------------------------------:|
-    |  1                   | Run Counter Program  |GUI window appears with count = 0  |
-    |  2                   | click count button   | display changes to count = 1      |
+| Step | Procedure                          | Expected Results                              |
+|------|------------------------------------|-----------------------------------------------|
+| 1    | Start the game.                    | The game begins, and Grinches are visible.    |
+| 2    | Observe Grinch movement.           | Grinches move randomly in the game world.     |
+| 3    | Verify movement randomness.        | Grinch movement appears erratic and unpredictable.|
+| Step | Procedure                          | Expected Results                              |
+|------|------------------------------------|-----------------------------------------------|
+| 1    | Start the game.                    | The game begins without any issues.           |
+| 2    | Press random keys or invalid keys (e.g., letters, numbers). | The game ignores the invalid input.|
+| 3    | Observe if the game crashes or freezes.  | The game continues to run smoothly      |
+| 4    | Ensure the game doesn't exhibit unexpected behavior. | The game remains functional, and no errors occur.|
+| 5    | Check for any error message.       | If necessary, an appropriate error message is displayed or the input is ignored.|
 

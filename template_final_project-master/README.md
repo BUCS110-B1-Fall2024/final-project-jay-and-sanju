@@ -11,10 +11,9 @@ Sanju Chacko
 ***
 
 ## Project Description
-This 2D platformer is a Christmas-themed game with a Grinch-inspired twist. 
-The game includes features like item collection and holiday-themed visual and audio design. 
-It aims to combine seasonal aesthetics with engaging gameplay mechanics for a fun and festive experience.
-
+This Christmas-inspired 2D arcade shooter reimagines the classic Space Invaders with a festive twist. 
+Players act as santas sleigh against waves of mischievous Grinch-like invaders determined to steal holiday cheer. 
+With snowballs, the game combines fast-paced action with holiday-themed visuals.
 ***    
 
 ## GUI Design
@@ -33,8 +32,8 @@ It aims to combine seasonal aesthetics with engaging gameplay mechanics for a fu
 
 1. start menu
 2. moveable character
-3. obstacle collisions
-4. scrolling background
+3. projectiles
+4. score
 5. game over screen
 
 ### Classes

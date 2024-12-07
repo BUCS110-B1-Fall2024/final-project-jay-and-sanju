@@ -8,20 +8,16 @@ class Controller:
         self.screen = pygame.display.set_mode((800, 600))
         pygame.display.set_caption("Santa's Christmas Adventure")
 
-        # Game state variables
         self.running = False  # Main game loop state
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont(None, 36)
         self.score = 0
 
-        # Initialize game objects
         self.initialize_game_objects()
 
     def initialize_game_objects(self):
-        """Initialize all game objects and reset the game state."""
         self.santa = Santa("assets/santa.png", 100, 100, 5)
 
-        # Adding 4 Grinches now
         self.grinches = [
             Grinch("assets/grinch.png", 200, 200, 2, 2),
             Grinch("assets/grinch.png", 300, 300, -3, 1),
@@ -29,7 +25,6 @@ class Controller:
             Grinch("assets/grinch.png", 600, 400, -2, 3)
         ]
         
-        # Adding more presents
         self.presents = [
             Present("assets/present.png", random.randint(50, 750), random.randint(50, 550)),
             Present("assets/present.png", random.randint(50, 750), random.randint(50, 550)),
@@ -87,7 +82,6 @@ class Controller:
         self.screen.blit(score_text, (10, 10))
 
     def display_message(self, message, sub_message=None):
-        """Displays a message at the center of the screen."""
         self.screen.fill((0, 0, 0))
         text = self.font.render(message, True, (255, 255, 255))
         text_rect = text.get_rect(center=(400, 250))
@@ -101,7 +95,6 @@ class Controller:
         pygame.display.flip()
 
     def start_screen(self):
-        """Display the start screen."""
         self.display_message("Santa's Christmas Adventure", "Press SPACE to Start")
         waiting = True
         while waiting:
@@ -113,7 +106,6 @@ class Controller:
                     waiting = False
 
     def game_over_screen(self):
-        """Display the game over screen."""
         self.display_message("Game Over", f"Score: {self.score}. Press R to Restart or Q to Quit.")
         waiting = True
         while waiting:
@@ -130,7 +122,6 @@ class Controller:
                         exit()
 
     def mainloop(self):
-        """Main game loop."""
         self.start_screen()
 
         self.running = True
@@ -143,4 +134,4 @@ class Controller:
             self.clock.tick(60)
 
         self.game_over_screen()
-        self.mainloop()  # Restart the game loop after Game Over
+        self.mainloop()

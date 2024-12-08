@@ -32,7 +32,7 @@ class Santa(GameObject):
 class Grinch(GameObject):
     def __init__(self, image_file, x, y, dx, dy):
         super().__init__(image_file, x, y)
-        self.image = pygame.transform.scale(self.image, (50, 50))  # Smaller Grinch
+        self.image = pygame.transform.scale(self.image, (50, 50))  
         self.rect = self.image.get_rect(topleft=(x, y))
         self.dx = dx
         self.dy = dy
@@ -40,5 +40,5 @@ class Grinch(GameObject):
 class Present(GameObject):
     def __init__(self, image_file, x, y):
         super().__init__(image_file, x, y)
-        self.image = pygame.transform.scale(self.image, (30, 30))  # Smaller present
+        self.image = pygame.transform.scale(self.image, (30, 30))  
         self.rect = self.image.get_rect(topleft=(x, y))

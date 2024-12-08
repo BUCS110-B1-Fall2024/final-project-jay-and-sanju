@@ -8,7 +8,7 @@ class Controller:
         self.screen = pygame.display.set_mode((800, 600))
         pygame.display.set_caption("Santa's Christmas Adventure")
 
-        self.running = False  # Main game loop state
+        self.running = False  
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont(None, 36)
         self.score = 0
@@ -115,7 +115,7 @@ class Controller:
                     exit()
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_r:
-                        self.initialize_game_objects()  # Reset game state
+                        self.initialize_game_objects()  
                         waiting = False
                     elif event.key == pygame.K_q:
                         pygame.quit()
